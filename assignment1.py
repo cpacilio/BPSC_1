@@ -19,7 +19,6 @@ except:
     
 #initialize list
 xval = [i*0.1 for i in range(-30,31)]
-print(xval)
 
 #implement function
 if n == "1":
@@ -28,7 +27,7 @@ elif n == "2":
     yval = [x**2 for x in xval]
 elif n == "3":
     yval = [x**3 for x in xval]
-elif n == "4"
+elif n == "4":
     yval = [mt.sin(x) for x in xval]
 elif n == "5":
     yval = [mt.cos(x) for x in xval]
