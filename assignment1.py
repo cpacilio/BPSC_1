@@ -8,6 +8,9 @@ try:
 except:
     print("Usage: give one of the following command line arguments:")
     print("1: f(x) = x")
+    print("2: f(x) = sin(x)")
+    print("3: f(x) = cos(x)")
+    print("4: f(x) = tan(x)")
     sys.exit()
     
 #initialize list
@@ -22,6 +25,9 @@ elif n == "3":
     yval = [mt.cos(x) for x in xval]
 elif n == "4":
     yval = [mt.tan(x) for x in xval]
+else:
+    print("Invalid argument")
+    sys.exit()
     
 #plot
 plt.figure()
