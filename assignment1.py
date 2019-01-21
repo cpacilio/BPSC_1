@@ -13,6 +13,8 @@ except:
     print("4: f(x) = sin(x)")
     print("5: f(x) = cos(x)")
     print("6: f(x) = tan(x)")
+    print("7: f(x) = exp(x)")
+    print("8: f(x) = sqrt(abs(x))")
     sys.exit()
     
 #initialize list
@@ -32,6 +34,10 @@ elif n == "5":
     yval = [mt.cos(x) for x in xval]
 elif n == "6":
     yval = [mt.tan(x) for x in xval]
+elif n == "7":
+    yval = [mt.exp(x) for x in xval]
+elif n == "8":
+    yval = [mt.sqrt(mt.fabs(x)) for x in xval]
 else:
     print("Invalid argument")
     sys.exit()
