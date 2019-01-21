@@ -1,5 +1,6 @@
 import sys #to import from command line
 import matplotlib.pyplot as plt #to plot
+import math as mt
 
 #Usage message
 try:
@@ -9,6 +10,9 @@ except:
     print("1: f(x) = x")
     print("2: f(x) = x**2")
     print("3: f(x) = x**3")
+    print("4: f(x) = sin(x)")
+    print("5: f(x) = cos(x)")
+    print("6: f(x) = tan(x)")
     sys.exit()
     
 #initialize list
@@ -22,6 +26,12 @@ elif n == "2":
     yval = [x**2 for x in xval]
 elif n == "3":
     yval = [x**3 for x in xval]
+elif n == "4"
+    yval = [mt.sin(x) for x in xval]
+elif n == "5":
+    yval = [mt.cos(x) for x in xval]
+elif n == "6":
+    yval = [mt.tan(x) for x in xval]
 else:
     print("Invalid argument")
     sys.exit()
