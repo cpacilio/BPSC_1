@@ -10,11 +10,11 @@ xval = [i*0.1 for i in range(-50,51)]
 #implement function
 if n == "1":
     yval = [x for x in xval]
-if n == "2":
+elif n == "2":
     yval = [mt.sin(x) for x in xval]
-if n == "3":
+elif n == "3":
     yval = [mt.cos(x) for x in xval]
-if n == "4":
+elif n == "4":
     yval = [mt.tan(x) for x in xval]
     
 #plot
