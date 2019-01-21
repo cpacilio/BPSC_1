@@ -10,11 +10,15 @@ except:
     sys.exit()
     
 #initialize list
-xval = [i*0.1 for i in range(-50,51)]
+xval = [i*0.1 for i in range(-30,31)]
+print(xval)
 
 #implement function
 if n == "1":
     yval = [x for x in xval]
+else:
+    print("Invalid argument")
+    sys.exit()
     
 #plot
 plt.figure()
